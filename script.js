@@ -4,7 +4,7 @@
 // Note that when running locally, in order to open a web page which uses modules, you must serve the directory over HTTP e.g. with https://www.npmjs.com/package/http-server
 // You can't open the index.html file using a file:// URL.
 
-import { getMisspelledWords } from "./common.mjs";
+import { getMisspelledWords } from "./common.js";
 let dictionary = [];
 
 async function loadDictionary() {
@@ -85,3 +85,4 @@ function displayResults(misspelledWords) {
 
   resultsDiv.appendChild(list);
 }
+

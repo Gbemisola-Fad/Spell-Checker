@@ -10,5 +10,29 @@
 <script type=“module” src=“script.mjs”></script>
 </head>
 <body>
+    <main class="container">
+    <h1>Basic English Spell Checker</h1>
+    <p class="subtitle">Check your text for spelling mistakes in Basic English.</p>
+
+    <div class="input-section">
+      <label for="text-input">Enter your text:</label>
+
+      <textarea 
+        id="text-input"
+        rows="6"
+        cols="50"
+        spellcheck="false"
+        placeholder="Type or paste your text here..."
+      ></textarea>
+
+      <button id="check-btn">Check spelling</button>
+    </div>
+
+    <section class="results-section">
+      <h2>Results</h2>
+      <div id="results" aria-live="polite"></div>
+    </section>
+  </main>
 </body>
 </html>
+

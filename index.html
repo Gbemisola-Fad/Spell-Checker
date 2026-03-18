@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spell Checker</title>
-
-  <link rel="stylesheet" href="style.css">
-
-<script type=“module” src=“script.js”></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic English Spell Checker</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <main class="container">
+  <div class="card">
     <h1>Basic English Spell Checker</h1>
     <p class="subtitle">Check your text for spelling mistakes in Basic English.</p>
 
-    <div class="input-section">
-      <label for="text-input">Enter your text:</label>
+    <label for="text-input">Enter your text:</label>
+    <textarea id="text-input" placeholder="Type or paste your text here…"></textarea>
+    <button id="check-btn">Check spelling</button>
 
-      <textarea 
-        id="text-input"
-        rows="6"
-        cols="50"
-        spellcheck="false"
-        placeholder="Type or paste your text here..."
-      ></textarea>
-
-      <button id="check-btn">Check spelling</button>
-    </div>
-
-    <section class="results-section">
+    <div class="results-section">
       <h2>Results</h2>
-      <div id="results" aria-live="polite"></div>
-    </section>
-  </main>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
-
-

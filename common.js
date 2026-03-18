@@ -1,5 +1,8 @@
 import words from "./words.json" with { type: "json" };
-
+// common.js - add dedup check before pushing
+if (!dictionary.includes(part) && !misspelled.includes(part)) {
+  misspelled.push(part);
+}
 export const getDictionarySize = () => words.length;
 
 export const wordExists = (word) => {

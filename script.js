@@ -1,6 +1,3 @@
-// ── Dictionary ────────────────────────────────────────────────────────────
-// Inline fallback dictionary so the app works without a server.
-// Replace / extend with your own words.json fetch if needed.
 let dictionary = [
   "a","about","above","across","act","add","age","ago","air","all","allow",
   "almost","along","already","also","always","among","amount","an","and",
